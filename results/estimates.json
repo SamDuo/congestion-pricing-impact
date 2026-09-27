@@ -1,0 +1,561 @@
+{
+  "primary": {
+    "rideshare_trips": {
+      "log_points": -0.008699807585271368,
+      "se": 0.015279317908882227,
+      "p_value": 0.5690951979263887,
+      "pct": -0.008662073764207703,
+      "pct_ci_low": -0.03790946391958713,
+      "pct_ci_high": 0.021474432122822046,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.050716224602728684,
+        0.022509950107453335
+      ],
+      "passes_placebo": true,
+      "p_holm": 0.5690951979263887
+    },
+    "taxi_trips": {
+      "log_points": 0.03468775754146171,
+      "se": 0.016408383647672505,
+      "p_value": 0.03451300563491428,
+      "pct": 0.035296394834437445,
+      "pct_ci_low": 0.0025311144226292845,
+      "pct_ci_high": 0.06913252839486105,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Yellow taxi trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.008570345968620146,
+        0.0789987021165026
+      ],
+      "passes_placebo": false,
+      "p_holm": 0.06902601126982856
+    },
+    "speed_in_zone": {
+      "log_points": 0.04976145551698567,
+      "se": 0.014928737267101805,
+      "p_value": 0.0008583277298775394,
+      "pct": 0.05102035136393977,
+      "pct_ci_low": 0.02071327093318963,
+      "pct_ci_high": 0.0822273114674566,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Average speed of trips inside the zone",
+      "bootstrap_pct_ci": [
+        0.016008712239917445,
+        0.08651677452285267
+      ],
+      "passes_placebo": true,
+      "p_holm": 0.004291638649387697
+    },
+    "wait_in_zone": {
+      "log_points": 0.06365970367926185,
+      "se": 0.02620434782361725,
+      "p_value": 0.015125649736078257,
+      "pct": 0.06572967316123375,
+      "pct_ci_low": 0.012376083362904241,
+      "pct_ci_high": 0.12189506935359876,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Median Uber/Lyft wait, pickups inside the zone",
+      "bootstrap_pct_ci": [
+        -0.015967055702764132,
+        0.10913582116399569
+      ],
+      "passes_placebo": false,
+      "p_holm": 0.04537694920823477
+    },
+    "fare_per_mile": {
+      "log_points": -0.042544113563165536,
+      "se": 0.01619326323558439,
+      "p_value": 0.008607240051172266,
+      "pct": -0.04165181156488778,
+      "pct_ci_low": -0.07159045759138206,
+      "pct_ci_high": -0.010747726812317558,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft base fare per mile, trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.07195800307427955,
+        -0.013782716021869755
+      ],
+      "passes_placebo": false,
+      "p_holm": 0.034428960204689066
+    }
+  },
+  "secondary": {
+    "speed_in_zone_day": {
+      "log_points": 0.058055427999681906,
+      "se": 0.017215363891076328,
+      "p_value": 0.0007454231787537327,
+      "pct": 0.05977373522062442,
+      "pct_ci_low": 0.0246119287387234,
+      "pct_ci_high": 0.09614219624205689,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Speed inside the zone, car-toll daytime hours",
+      "bootstrap_pct_ci": [
+        0.0211203373856932,
+        0.09989829490014462
+      ],
+      "passes_placebo": true
+    },
+    "speed_in_zone_night": {
+      "log_points": 0.024960481931241372,
+      "se": 0.009928347708595861,
+      "p_value": 0.01193494420761424,
+      "pct": 0.025274602851592057,
+      "pct_ci_low": 0.005516437812905501,
+      "pct_ci_high": 0.04542101125559356,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Speed inside the zone, overnight",
+      "bootstrap_pct_ci": [
+        0.006846092964828308,
+        0.0449050126507572
+      ],
+      "passes_placebo": false
+    },
+    "rideshare_trips_internal": {
+      "log_points": -0.01626555870308791,
+      "se": 0.017739910058907037,
+      "p_value": 0.3591999133133923,
+      "pct": -0.016133988821543273,
+      "pct_ci_low": -0.04975472500636065,
+      "pct_ci_high": 0.018676286455290802,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft trips with both ends in the zone",
+      "bootstrap_pct_ci": [
+        -0.05409868475177364,
+        0.019857357504712996
+      ],
+      "passes_placebo": true
+    },
+    "rideshare_trips_boundary": {
+      "log_points": 0.0006559595848090421,
+      "se": 0.015131377674667731,
+      "p_value": 0.9654217777841998,
+      "pct": 0.0006561747733465827,
+      "pct_ci_low": -0.028584502766471575,
+      "pct_ci_high": 0.030777028947594202,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft trips crossing the zone boundary",
+      "bootstrap_pct_ci": [
+        -0.05188264127190057,
+        0.03485658567089148
+      ],
+      "passes_placebo": true
+    },
+    "spillover_trips_upper_manhattan": {
+      "log_points": -0.020372047870536033,
+      "se": 0.011300368141579538,
+      "p_value": 0.0714231867891523,
+      "pct": -0.020165939691400153,
+      "pct_ci_low": -0.041629049448789535,
+      "pct_ci_high": 0.001777845195168376,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft trips within Manhattan north of the zone",
+      "bootstrap_pct_ci": [
+        -0.04276460579324347,
+        0.0008309352889982509
+      ],
+      "passes_placebo": true
+    },
+    "spillover_speed_upper_manhattan": {
+      "log_points": -0.006168424479281163,
+      "se": 0.00475470664428407,
+      "p_value": 0.19451760066006463,
+      "pct": -0.0061494388062911355,
+      "pct_ci_low": -0.01536816402075761,
+      "pct_ci_high": 0.0031555977496071554,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Speed within Manhattan north of the zone",
+      "bootstrap_pct_ci": [
+        -0.01575368482208977,
+        0.005359476408894486
+      ],
+      "passes_placebo": true
+    },
+    "driver_pay_per_trip": {
+      "log_points": -0.006985337217526866,
+      "se": 0.014909302896816736,
+      "p_value": 0.6394113034567026,
+      "pct": -0.006960996458618406,
+      "pct_ci_low": -0.0355593991154785,
+      "pct_ci_high": 0.022485430051420216,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft driver pay per trip touching the zone",
+      "bootstrap_pct_ci": [
+        -0.035436215622202484,
+        0.018327539796469425
+      ],
+      "passes_placebo": false
+    },
+    "rideshare_trips_vs_upper_manhattan": {
+      "log_points": 0.011672240285264661,
+      "se": 0.01884722442190052,
+      "p_value": 0.5357133556281444,
+      "pct": 0.01174062669710552,
+      "pct_ci_low": -0.024951085758831516,
+      "pct_ci_high": 0.04981307169198077,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber/Lyft trips touching the zone, upper-Manhattan control",
+      "bootstrap_pct_ci": [
+        -0.037711215936152676,
+        0.05689915086321508
+      ],
+      "passes_placebo": true
+    },
+    "taxi_trips_vs_outer": {
+      "log_points": -0.15413331407763153,
+      "se": 0.042968143729959295,
+      "p_value": 0.00033430793055946195,
+      "pct": -0.14284225779964663,
+      "pct_ci_low": -0.2120726023027394,
+      "pct_ci_high": -0.06752906782878089,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Yellow taxi trips touching the zone, outer-borough control (grew 25% on its own)",
+      "bootstrap_pct_ci": [
+        -0.2293517541410587,
+        -0.06380016243648474
+      ],
+      "passes_placebo": true
+    },
+    "uber_trips": {
+      "log_points": 0.0022987473470838598,
+      "se": 0.019992817808158363,
+      "p_value": 0.9084620388487177,
+      "pct": 0.002301391492452594,
+      "pct_ci_low": -0.03621443831988119,
+      "pct_ci_high": 0.04235643210552364,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Uber-only trips touching the zone (no January credit)",
+      "bootstrap_pct_ci": [
+        -0.04704428960236765,
+        0.044914677280542395
+      ],
+      "passes_placebo": true
+    },
+    "lyft_trips": {
+      "log_points": -0.03871539700224239,
+      "se": 0.024897808932206014,
+      "p_value": 0.11995272604034968,
+      "pct": -0.03797553476466076,
+      "pct_ci_low": -0.0837941438817682,
+      "pct_ci_high": 0.010134420699348208,
+      "n_pre_days": 37,
+      "n_post_days": 82,
+      "description": "Lyft-only trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.09244814294420013,
+        0.009984942626311237
+      ],
+      "passes_placebo": true
+    },
+    "rideshare_trips_feb_mar": {
+      "log_points": -0.0012409260975272394,
+      "se": 0.014675965090740466,
+      "p_value": 0.9326151827657169,
+      "pct": -0.0012401564671218805,
+      "pct_ci_low": -0.02955959923472878,
+      "pct_ci_high": 0.0279057057673944,
+      "n_pre_days": 37,
+      "n_post_days": 57,
+      "description": "Uber/Lyft trips touching the zone, February-March only",
+      "bootstrap_pct_ci": [
+        -0.045755321451625426,
+        0.030184610859967213
+      ],
+      "passes_placebo": true
+    }
+  },
+  "placebo": {
+    "rideshare_trips": {
+      "log_points": 0.0032102263564653304,
+      "se": 0.009998291565491483,
+      "p_value": 0.7481516685857263,
+      "pct": 0.003215384651383012,
+      "pct_ci_low": -0.016252543746280785,
+      "pct_ci_high": 0.02306857476808582,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.01674431122675103,
+        0.018821427600692046
+      ]
+    },
+    "taxi_trips": {
+      "log_points": -0.08508882999111779,
+      "se": 0.012664525588521302,
+      "p_value": 1.8338455708566775e-11,
+      "pct": -0.08156930341283154,
+      "pct_ci_low": -0.10408599217800876,
+      "pct_ci_high": -0.05848671070093472,
+      "n_pre_days": 43,
+      "n_post_days": 82,
+      "description": "Yellow taxi trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.10393239525654344,
+        -0.04945319879310945
+      ]
+    },
+    "speed_in_zone": {
+      "log_points": -0.005750378199069112,
+      "se": 0.007561500840388682,
+      "p_value": 0.4469670843678607,
+      "pct": -0.0057338764199946195,
+      "pct_ci_low": -0.020360515065765705,
+      "pct_ci_high": 0.009111147214707701,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Average speed of trips inside the zone",
+      "bootstrap_pct_ci": [
+        -0.020593656042800442,
+        0.009759053248352568
+      ]
+    },
+    "wait_in_zone": {
+      "log_points": 0.0785007258920164,
+      "se": 0.01752202880940908,
+      "p_value": 7.460239819888222e-06,
+      "pct": 0.08166414033335563,
+      "pct_ci_low": 0.04514766378283655,
+      "pct_ci_high": 0.11945646823567152,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Median Uber/Lyft wait, pickups inside the zone",
+      "bootstrap_pct_ci": [
+        0.034955809951178626,
+        0.12254246598900768
+      ]
+    },
+    "fare_per_mile": {
+      "log_points": 0.022254674214559202,
+      "se": 0.010059720766459139,
+      "p_value": 0.026949004856676104,
+      "pct": 0.022504156756982766,
+      "pct_ci_low": 0.0025412072251076233,
+      "pct_ci_high": 0.042864615489617085,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft base fare per mile, trips touching the zone",
+      "bootstrap_pct_ci": [
+        0.0009888072985468313,
+        0.04129646575925855
+      ]
+    },
+    "speed_in_zone_day": {
+      "log_points": -0.014592071737085288,
+      "se": 0.009085490338921896,
+      "p_value": 0.10825518715762865,
+      "pct": -0.014486123419485722,
+      "pct_ci_low": -0.03188007080498434,
+      "pct_ci_high": 0.003220336286569159,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Speed inside the zone, car-toll daytime hours",
+      "bootstrap_pct_ci": [
+        -0.03160857399209264,
+        0.004611314029671068
+      ]
+    },
+    "speed_in_zone_night": {
+      "log_points": 0.018173924550346526,
+      "se": 0.007761975067079921,
+      "p_value": 0.019211332238816645,
+      "pct": 0.018340075328122013,
+      "pct_ci_low": 0.002965120268636507,
+      "pct_ci_high": 0.03395072078032813,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Speed inside the zone, overnight",
+      "bootstrap_pct_ci": [
+        0.0022020369420161856,
+        0.03376845127410088
+      ]
+    },
+    "rideshare_trips_internal": {
+      "log_points": 0.018559583148351433,
+      "se": 0.013711372827774732,
+      "p_value": 0.17586707930394474,
+      "pct": 0.018732882673761764,
+      "pct_ci_low": -0.008279746286854408,
+      "pct_ci_high": 0.04648128578100032,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft trips with both ends in the zone",
+      "bootstrap_pct_ci": [
+        -0.011122700636551878,
+        0.04079990613047181
+      ]
+    },
+    "rideshare_trips_boundary": {
+      "log_points": -0.015183821024091243,
+      "se": 0.01179982363353928,
+      "p_value": 0.19816968068044083,
+      "pct": -0.015069128039990037,
+      "pct_ci_low": -0.037586464757497585,
+      "pct_ci_high": 0.00797504089078419,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft trips crossing the zone boundary",
+      "bootstrap_pct_ci": [
+        -0.03917145651422596,
+        0.007516389429982112
+      ]
+    },
+    "spillover_trips_upper_manhattan": {
+      "log_points": -0.020912127610413462,
+      "se": 0.012432216735801383,
+      "p_value": 0.0925510747813711,
+      "pct": -0.020694985339537047,
+      "pct_ci_low": -0.044269036682593806,
+      "pct_ci_high": 0.0034605433418661443,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft trips within Manhattan north of the zone",
+      "bootstrap_pct_ci": [
+        -0.048827276371519825,
+        -0.0013309939950768349
+      ]
+    },
+    "spillover_speed_upper_manhattan": {
+      "log_points": -0.0017018614505065167,
+      "se": 0.005426895068929764,
+      "p_value": 0.7538266571832419,
+      "pct": -0.0017004141054848202,
+      "pct_ci_low": -0.012262574612433397,
+      "pct_ci_high": 0.00897469062298171,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Speed within Manhattan north of the zone",
+      "bootstrap_pct_ci": [
+        -0.011259560075510844,
+        0.00770134557062166
+      ]
+    },
+    "driver_pay_per_trip": {
+      "log_points": 0.017924862582736168,
+      "se": 0.008816760102012527,
+      "p_value": 0.042048062313941294,
+      "pct": 0.018086477127408667,
+      "pct_ci_low": 0.000644537947834859,
+      "pct_ci_high": 0.035832441593492165,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft driver pay per trip touching the zone",
+      "bootstrap_pct_ci": [
+        -0.0008330136030799154,
+        0.033965868911716525
+      ]
+    },
+    "rideshare_trips_vs_upper_manhattan": {
+      "log_points": 0.024122353966878778,
+      "se": 0.01335005007201542,
+      "p_value": 0.07077613797522496,
+      "pct": 0.024415651541629307,
+      "pct_ci_low": -0.0020411773245055495,
+      "pct_ci_high": 0.05157387587393717,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber/Lyft trips touching the zone, upper-Manhattan control",
+      "bootstrap_pct_ci": [
+        0.0017514991864221374,
+        0.05284212321647578
+      ]
+    },
+    "taxi_trips_vs_outer": {
+      "log_points": -0.04063334726568847,
+      "se": 0.022619799157815545,
+      "p_value": 0.07243696598596809,
+      "pct": -0.0398188815524042,
+      "pct_ci_low": -0.08145771553531182,
+      "pct_ci_high": 0.003707500260124104,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Yellow taxi trips touching the zone, outer-borough control (grew 25% on its own)",
+      "bootstrap_pct_ci": [
+        -0.074765692252274,
+        0.005352960379685677
+      ]
+    },
+    "uber_trips": {
+      "log_points": -0.006451410535027371,
+      "se": 0.01617499296260535,
+      "p_value": 0.6900030680022907,
+      "pct": -0.006430644866031042,
+      "pct_ci_low": -0.03743512663412185,
+      "pct_ci_high": 0.025572499866298743,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Uber-only trips touching the zone (no January credit)",
+      "bootstrap_pct_ci": [
+        -0.038943505661349374,
+        0.02089386527963818
+      ]
+    },
+    "lyft_trips": {
+      "log_points": 0.04048002986010603,
+      "se": 0.02431993521975644,
+      "p_value": 0.09601667526739582,
+      "pct": 0.04131051437823019,
+      "pct_ci_low": -0.007160408516084902,
+      "pct_ci_high": 0.09214781184743018,
+      "n_pre_days": 43,
+      "n_post_days": 81,
+      "description": "Lyft-only trips touching the zone",
+      "bootstrap_pct_ci": [
+        -0.002482240998733231,
+        0.08534561327610773
+      ]
+    },
+    "rideshare_trips_feb_mar": {
+      "log_points": -0.0026155733751177896,
+      "se": 0.010515905645048717,
+      "p_value": 0.8035731602755939,
+      "pct": -0.0026121557434156586,
+      "pct_ci_low": -0.02295871380897416,
+      "pct_ci_high": 0.01815811259003648,
+      "n_pre_days": 43,
+      "n_post_days": 55,
+      "description": "Uber/Lyft trips touching the zone, February-March only",
+      "bootstrap_pct_ci": [
+        -0.021640036259209683,
+        0.012682787291902404
+      ]
+    }
+  },
+  "raw_changes": {
+    "rideshare_trips_touching_zone": -0.013662873780952618,
+    "rideshare_trips_outer_boroughs": -0.002713171918250397,
+    "taxi_trips_touching_zone": 0.06549482110530719,
+    "taxi_trips_outer_boroughs": 0.2535552886053776,
+    "taxi_trips_upper_manhattan": 0.026751375086690045,
+    "speed_in_zone": 0.05716020824897393,
+    "speed_outer_boroughs": 0.004917099264604414
+  },
+  "first_stage": {
+    "rideshare/crz_boundary": 0.9790014972058633,
+    "rideshare/crz_internal": 0.9939918753743161,
+    "rideshare/manhattan_north": 0.0019339234338553739,
+    "rideshare/other": 0.3783798623078283,
+    "rideshare/outer": 0.0010789006825651102,
+    "yellow/crz_boundary": 0.9662336564505128,
+    "yellow/crz_internal": 0.9960852004890766,
+    "yellow/manhattan_north": 0.003303194836063664,
+    "yellow/other": 0.5405613142479971,
+    "yellow/outer": 0.011677940259932323
+  }
+}

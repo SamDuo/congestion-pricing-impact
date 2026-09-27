@@ -1,0 +1,18 @@
+family,outcome,description,effect_pct,ci_95,bootstrap_ci,p,p_holm,placebo_pct,placebo_p,passes_placebo
+primary,rideshare_trips,Uber/Lyft trips touching the zone,-0.87,"[-3.8, 2.1]","[-5.1, 2.3]",0.57,0.57,0.32,0.75,True
+primary,taxi_trips,Yellow taxi trips touching the zone,3.53,"[0.3, 6.9]","[-0.9, 7.9]",0.035,0.069,-8.16,1.8e-11,False
+primary,speed_in_zone,Average speed of trips inside the zone,5.1,"[2.1, 8.2]","[1.6, 8.7]",0.00086,0.0043,-0.57,0.45,True
+primary,wait_in_zone,"Median Uber/Lyft wait, pickups inside the zone",6.57,"[1.2, 12.2]","[-1.6, 10.9]",0.015,0.045,8.17,7.5e-06,False
+primary,fare_per_mile,"Uber/Lyft base fare per mile, trips touching the zone",-4.17,"[-7.2, -1.1]","[-7.2, -1.4]",0.0086,0.034,2.25,0.027,False
+secondary,speed_in_zone_day,"Speed inside the zone, car-toll daytime hours",5.98,"[2.5, 9.6]","[2.1, 10.0]",0.00075,,-1.45,0.11,True
+secondary,speed_in_zone_night,"Speed inside the zone, overnight",2.53,"[0.6, 4.5]","[0.7, 4.5]",0.012,,1.83,0.019,False
+secondary,rideshare_trips_internal,Uber/Lyft trips with both ends in the zone,-1.61,"[-5.0, 1.9]","[-5.4, 2.0]",0.36,,1.87,0.18,True
+secondary,rideshare_trips_boundary,Uber/Lyft trips crossing the zone boundary,0.07,"[-2.9, 3.1]","[-5.2, 3.5]",0.97,,-1.51,0.2,True
+secondary,spillover_trips_upper_manhattan,Uber/Lyft trips within Manhattan north of the zone,-2.02,"[-4.2, 0.2]","[-4.3, 0.1]",0.071,,-2.07,0.093,True
+secondary,spillover_speed_upper_manhattan,Speed within Manhattan north of the zone,-0.61,"[-1.5, 0.3]","[-1.6, 0.5]",0.19,,-0.17,0.75,True
+secondary,driver_pay_per_trip,Uber/Lyft driver pay per trip touching the zone,-0.7,"[-3.6, 2.2]","[-3.5, 1.8]",0.64,,1.81,0.042,False
+secondary,rideshare_trips_vs_upper_manhattan,"Uber/Lyft trips touching the zone, upper-Manhattan control",1.17,"[-2.5, 5.0]","[-3.8, 5.7]",0.54,,2.44,0.071,True
+secondary,taxi_trips_vs_outer,"Yellow taxi trips touching the zone, outer-borough control (grew 25% on its own)",-14.28,"[-21.2, -6.8]","[-22.9, -6.4]",0.00033,,-3.98,0.072,True
+secondary,uber_trips,Uber-only trips touching the zone (no January credit),0.23,"[-3.6, 4.2]","[-4.7, 4.5]",0.91,,-0.64,0.69,True
+secondary,lyft_trips,Lyft-only trips touching the zone,-3.8,"[-8.4, 1.0]","[-9.2, 1.0]",0.12,,4.13,0.096,True
+secondary,rideshare_trips_feb_mar,"Uber/Lyft trips touching the zone, February-March only",-0.12,"[-3.0, 2.8]","[-4.6, 3.0]",0.93,,-0.26,0.8,True

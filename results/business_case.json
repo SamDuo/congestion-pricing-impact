@@ -1,0 +1,28 @@
+{
+  "rideshare": {
+    "fee": 1.5,
+    "pre_avg_base_fare": 34.80443212306176,
+    "fee_as_pct_of_fare": 0.04309795932587808,
+    "trip_effect_pct": -0.008662073764207703,
+    "trip_effect_ci": [
+      -0.03790946391958713,
+      0.021474432122822046
+    ],
+    "arc_elasticity": -0.2009857055808807,
+    "post_trips_per_day": 199273.28048780488,
+    "platform_margin_per_trip": 9.496058848955796,
+    "trips_lost_per_day": 1741.202277386148,
+    "trips_lost_per_day_worst_case": 7852.008676404674,
+    "absorb_fee_cost_per_year": 110055429.31394209,
+    "absorb_fee_recovered_margin_per_year": 6035114.14230807,
+    "absorb_fee_recovered_margin_per_year_worst_case": 27215544.812882356
+  },
+  "yellow": {
+    "fee": 0.75,
+    "pre_avg_base_fare": 20.706135840675167,
+    "fee_as_pct_of_fare": 0.0362211474787439,
+    "trip_effect": "inconclusive: the same test finds an effect in the placebo year"
+  },
+  "fee_revenue_per_day_tlc_trips": 419509.51829268294,
+  "fee_revenue_per_year_tlc_trips": 153120974.17682928
+}
